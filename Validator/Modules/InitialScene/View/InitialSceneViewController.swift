@@ -104,7 +104,7 @@ extension InitialSceneViewController: InitialSceneViewControllerType {
         case .showSuccess(let model):
             view.endEditing(true)
             
-            let action = UIAlertAction(title: model.authSuccessData.actionTitle, style: .default) { [weak self] _ in
+            let action = UIAlertAction(title: model.authSuccessData.actionTitle, style: .default) { _ in
                 UIView.animate(withDuration: Constants.fadeOutAnimationDuration, delay: 0, options: [.curveEaseIn]) { [weak self] in
                     self?.userInputView.alpha = Constants.minAlphaValue
                 } completion: { [weak self] finished in
