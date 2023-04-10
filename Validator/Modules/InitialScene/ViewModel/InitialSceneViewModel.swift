@@ -20,7 +20,7 @@ final class InitialSceneViewModel {
     init() {
         data = [.email(value: Constants.emailPlaceholder),
                 .password(value: Constants.passwordPlaceholder),
-                .confirmPassword(value: Constants.confirmPasswordPlaceholer)]
+                .confirmPassword(value: Constants.confirmPasswordPlaceholder)]
     }
     
     private let data: [PlaceholderType]
@@ -40,7 +40,7 @@ extension InitialSceneViewModel {
     private struct Constants {
         static let emailPlaceholder = "email"
         static let passwordPlaceholder = "password"
-        static let confirmPasswordPlaceholer = "confirm password"
+        static let confirmPasswordPlaceholder = "confirm password"
         static let authSuccessData: acData = (title: "Yay!!!", body: "You're awesome!", actionTitle: "Yes I am awesome")
         static let authIssueData: acData = (title: "Nope", body: nil, actionTitle: "Okay")
     }
