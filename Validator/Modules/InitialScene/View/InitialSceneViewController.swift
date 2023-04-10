@@ -22,7 +22,7 @@ final class InitialSceneViewController: BaseViewController<InitialSceneInteracta
         super.viewDidAppear(animated)
         
         UIView.animate(withDuration: Constants.fadeOutAnimationDuration, delay: 0, options: [.curveEaseIn, .allowUserInteraction]) { [weak self] in
-            self?.userInputView.alpha = Constants.maxAlphaValue
+            self?.userInputView.alpha = Constants.alphaValues.max
         }
     }
     
@@ -31,7 +31,7 @@ final class InitialSceneViewController: BaseViewController<InitialSceneInteracta
     }
 	
 	private func setup() {
-        self.userInputView.alpha = Constants.minAlphaValue
+        self.userInputView.alpha = Constants.alphaValues.min
         
 		interactor?.makeRequest(requestType: .initialSetup)
 	}
@@ -106,7 +106,7 @@ extension InitialSceneViewController: InitialSceneViewControllerType {
             
             let action = UIAlertAction(title: model.authSuccessData.actionTitle, style: .default) { _ in
                 UIView.animate(withDuration: Constants.fadeOutAnimationDuration, delay: 0, options: [.curveEaseIn]) { [weak self] in
-                    self?.userInputView.alpha = Constants.minAlphaValue
+                    self?.userInputView.alpha = Constants.alphaValues.min
                 } completion: { [weak self] finished in
                     self?.userInputView.isHidden = finished
                 }
@@ -121,9 +121,9 @@ extension InitialSceneViewController: InitialSceneViewControllerType {
 
 extension InitialSceneViewController {
 	private struct Constants {
+        //Alpha
+        static let alphaValues: (min: CGFloat, max: CGFloat) = (min: 0.0, max: 1.0)
         static let defaultInputViewConstraintValue: CGFloat = 0.0
-        static let minAlphaValue: CGFloat = 0.0
-        static let maxAlphaValue: CGFloat = 1.0
         static let fadeOutAnimationDuration: Double = 1.0
 	}
 }
