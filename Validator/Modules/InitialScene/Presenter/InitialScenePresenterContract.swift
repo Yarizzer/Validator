@@ -13,7 +13,7 @@ protocol InitialScenePresentable {
 struct InitialScenePresenterResponse {
 	enum InitialSceneResponseType {
 		case initialSetup
-        case proseed(result: AuthResponse)
+        case proceed(result: AuthResponse)
 		case releaseView
 	}
 }

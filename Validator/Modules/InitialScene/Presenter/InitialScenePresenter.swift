@@ -22,7 +22,7 @@ extension InitialScenePresenter: InitialScenePresentable {
 		
 		switch responseType {
 		case .initialSetup: viewController?.update(viewModelDataType: .initialSetup(with: model))
-        case .proseed(let result):
+        case .proceed(let result):
             switch result {
             case .success: viewController?.update(viewModelDataType: .showSuccess(with: model))
             case .failure(let error): viewController?.update(viewModelDataType: .showAlert(with: (model: model, description: error.localizedDescription)))

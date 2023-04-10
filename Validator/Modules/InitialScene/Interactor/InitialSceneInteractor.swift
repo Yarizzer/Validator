@@ -24,7 +24,7 @@ extension InitialSceneInteractor: InitialSceneInteractable {
 		case .initialSetup: presenter.response(responseType: .initialSetup)
         case .authenticate(let data):
             service.authenticate(with: data) { [weak self] response in
-                self?.presenter.response(responseType: .proseed(result: response))
+                self?.presenter.response(responseType: .proceed(result: response))
             }
 		}
 	}
