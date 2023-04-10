@@ -24,7 +24,6 @@
 		711FEE5529C4D64E002FF363 /* AppValidatorLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711FEE5429C4D64E002FF363 /* AppValidatorLayer.swift */; };
 		711FEE5729C4E0C8002FF363 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711FEE5629C4E0C8002FF363 /* BaseViewController.swift */; };
 		711FEE6529C4E116002FF363 /* InitialScenePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711FEE5929C4E116002FF363 /* InitialScenePresenter.swift */; };
-		711FEE6629C4E116002FF363 /* InitialSceneRouterContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711FEE5A29C4E116002FF363 /* InitialSceneRouterContract.swift */; };
 		711FEE6729C4E116002FF363 /* InitialSceneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711FEE5B29C4E116002FF363 /* InitialSceneRouter.swift */; };
 		711FEE6829C4E116002FF363 /* InitialSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711FEE5C29C4E116002FF363 /* InitialSceneViewController.swift */; };
 		711FEE6929C4E116002FF363 /* InitialSceneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711FEE5D29C4E116002FF363 /* InitialSceneInteractor.swift */; };
@@ -58,7 +57,6 @@
 		711FEE5429C4D64E002FF363 /* AppValidatorLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppValidatorLayer.swift; sourceTree = "<group>"; };
 		711FEE5629C4E0C8002FF363 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		711FEE5929C4E116002FF363 /* InitialScenePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialScenePresenter.swift; sourceTree = "<group>"; };
-		711FEE5A29C4E116002FF363 /* InitialSceneRouterContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialSceneRouterContract.swift; sourceTree = "<group>"; };
 		711FEE5B29C4E116002FF363 /* InitialSceneRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialSceneRouter.swift; sourceTree = "<group>"; };
 		711FEE5C29C4E116002FF363 /* InitialSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialSceneViewController.swift; sourceTree = "<group>"; };
 		711FEE5D29C4E116002FF363 /* InitialSceneInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialSceneInteractor.swift; sourceTree = "<group>"; };
@@ -306,7 +304,6 @@
 		711FEE7529C4E163002FF363 /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				711FEE5A29C4E116002FF363 /* InitialSceneRouterContract.swift */,
 				711FEE5B29C4E116002FF363 /* InitialSceneRouter.swift */,
 			);
 			path = Router;
@@ -408,7 +405,6 @@
 				710EE38C29C576210015602E /* AppValidatorContract.swift in Sources */,
 				711FEE4D29C4D5CB002FF363 /* AppRouter.swift in Sources */,
 				711FEE6829C4E116002FF363 /* InitialSceneViewController.swift in Sources */,
-				711FEE6629C4E116002FF363 /* InitialSceneRouterContract.swift in Sources */,
 				711FEE6729C4E116002FF363 /* InitialSceneRouter.swift in Sources */,
 				711FEE6E29C4E117002FF363 /* InitialSceneViewControllerContract.swift in Sources */,
 				711FEE6929C4E116002FF363 /* InitialSceneInteractor.swift in Sources */,

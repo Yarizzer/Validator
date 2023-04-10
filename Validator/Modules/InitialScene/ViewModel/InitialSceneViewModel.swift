@@ -27,9 +27,9 @@ final class InitialSceneViewModel {
 }
 
 extension InitialSceneViewModel: InitialSceneViewModelType {
-    var placeholders: [PlaceholderType] { return data }
-    var authSuccessData: acData { return Constants.authSuccessData }
-    var authIssueData: acData { return Constants.authIssueData }
+    var placeholders: [PlaceholderType] { data }
+    var authSuccessData: acData { Constants.authSuccessData }
+    var authIssueData: acData { Constants.authIssueData }
     
     func authenticate(with data: AuthDataModel, completion: @escaping (AuthResponse) -> ()) {
         AppCore.shared.validatorLayer.validate(data: data) { completion($0) }
