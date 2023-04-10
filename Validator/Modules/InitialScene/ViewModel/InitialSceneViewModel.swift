@@ -14,7 +14,6 @@ protocol InitialSceneViewModelType {
     var authIssueData: acData { get }
     
     func authenticate(with data: AuthDataModel, completion: @escaping (AuthResponse) -> ())
-    
 }
 
 final class InitialSceneViewModel {
